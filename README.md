@@ -13,7 +13,7 @@ Powered by the Qiniu API
 ## ⚙️ Configuration
 
 1. **Obtain a Qiniu API Key**
-   - Visit the [Qiniu Console](https://developer.Qiniu.in/user/apikeys) and apply for an API key.
+   - Visit the [Qiniu Console](https://portal.qiniu.com/developer/user/key) and apply for an API key.
 2. **Install the Qiniu Plugin**
    - In Dify, open the **Plugins Marketplace**.
    - Search for **"Qiniu"** and click **Install**.
@@ -29,5 +29,5 @@ Once authorized, you can use the following core features:
 
 Have a feature request or found a bug? We welcome your feedback!
 
-- **Submit an issue**: [GitHub Issues](https://github.com/heavi715/dify-plugin-Qiniu/issues)
+- **Submit an issue**: [GitHub Issues](https://github.com/heavi715/dify-plugin-qiniu/issues)
 - **Pull Requests**: Feel free to fork the repo, make changes, and submit a PR.

@@ -25,7 +25,7 @@ credentials_for_provider:
     help:
       en_US: Get your Access Key from Qiniu dashboard
       zh_Hans: 从七牛云控制台获取您的 Access Key
-    url: https://portal.qiniu.com/user/key
+    url: https://portal.qiniu.com/developer/user/key
   secret_key:
     type: secret-input
     required: true
@@ -38,7 +38,7 @@ credentials_for_provider:
     help:
       en_US: Get your Secret Key from Qiniu dashboard
       zh_Hans: 从七牛云控制台获取您的 Secret Key
-    url: https://portal.qiniu.com/user/key
+    url: https://portal.qiniu.com/developer/user/key
 tools:
   - tools/qiniu.yaml
 extra:
