@@ -21,7 +21,7 @@ class QiniuTool(Tool):
         return result
 
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
-        dify_url = os.getenv("PLUGIN_DIFY_INNER_API_URL")
+        dify_url = os.getenv("DIFY_INNER_API_URL")
         access_key = self.runtime.credentials["access_key"]
         secret_key = self.runtime.credentials["secret_key"]
         if not access_key or not secret_key:
@@ -66,6 +66,7 @@ class QiniuTool(Tool):
             # save file to local
             filePath = f"/tmp/{file_name}"
             with open(filePath, "wb") as f:
+                file_url = dify_url+file_url if dify_url is not None else file_url
                 f.write(requests.get(
                     dify_url+file_url).content)
         # 构建鉴权对象
