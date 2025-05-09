@@ -43,13 +43,13 @@ parameters:
     required: false
     label:
       en_US: Local File Path or file url
-      zh_Hans: 本地文件路径或者文件url
-      pt_BR: Caminho do Arquivo Local
+      zh_Hans: 文件url或本地文件路径
+      pt_BR: Caminho do Arquivo Local ou url do arquivo
     human_description:
-      en_US: The local path or file url of the file to upload
-      zh_Hans: 要上传文件的本地路径或者文件url
-      pt_BR: O caminho local do arquivo a ser enviado
-    llm_description: The local path of the file to upload
+      en_US: The local path or file url of the file to upload, choose either this or the file list below
+      zh_Hans: 要上传文件的本地路径或者文件url,和下面文件列表二选一，
+      pt_BR: O caminho local ou url do arquivo a ser enviado, escolha este ou a lista de arquivos abaixo
+    llm_description: The local path or file url of the file to upload
     form: llm
   - name: upload_files
     type: files
@@ -57,11 +57,11 @@ parameters:
     label:
       en_US: Upload Files
       zh_Hans: 上传文件列表
-      pt_BR: Arquivos
+      pt_BR: Lista de Arquivos para Upload
     human_description:
-      en_US: List of files to upload
-      zh_Hans: 要上传的文件列表
-      pt_BR: Lista de arquivos para enviar
+      en_US: List of files to upload, choose either this or the file url/local path above
+      zh_Hans: 要上传的文件列表，和上面文件url或本地文件路径二选一，
+      pt_BR: Lista de arquivos para enviar, escolha esta ou o caminho/url acima
     llm_description: List of files to upload
     form: llm
   - name: base_url

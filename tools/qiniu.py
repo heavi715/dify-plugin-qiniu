@@ -68,7 +68,7 @@ class QiniuTool(Tool):
             with open(filePath, "wb") as f:
                 file_url = dify_url+file_url if dify_url is not None else file_url
                 f.write(requests.get(
-                    dify_url+file_url).content)
+                    file_url).content)
         # 构建鉴权对象
         q = Auth(access_key, secret_key)
         # 生成上传 Token，可以指定过期时间等
